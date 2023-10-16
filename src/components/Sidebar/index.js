@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 
 const Sidebar = () => (
-  <div clasName="nav-bar">
+  <div className="nav-bar">
     <Link className="logo" to="/">
       <img src={LogoS} alt="logo" />
       <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
