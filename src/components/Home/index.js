@@ -3,6 +3,7 @@ import LogoTitle from '../../assets/images/logo-s.png'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
+import Logo from './Logo'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -24,7 +25,7 @@ const Home = () => {
     '.',
   ]
 
-  useEffect(() => {
+  useEffect(() => { //modified to fix error
     let timeoutId = setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 4000)
@@ -61,6 +62,7 @@ const Home = () => {
           CONTACT ME
         </Link>
       </div>
+      <Logo />
     </div>
   )
 }
